@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Book"
+        android:onClick="activity_main"/>
+    <item android:title="Update"
+        android:onClick="ReBook"
+       />
+</menu>

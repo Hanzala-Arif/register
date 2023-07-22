@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dates_order">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_71sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="@dimen/_9sdp"
+        android:fontFamily="@font/arizonia"
+        android:text="    Ismail Arts"
+        android:textSize="@dimen/_48sdp" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_91sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_111sdp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date"
+       />
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/startss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_27sdp"
+
+        android:onClick="date"
+        android:text="Check"
+        app:buttonColor="@color/teal_200"
+        app:cornerRadius="@dimen/_30sdp"
+        app:glowColor="@color/white"
+        app:pressedGlowSize="@dimen/_25sdp"
+        app:unpressedGlowSize="@dimen/_10sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+android:layout_marginTop="@dimen/_160sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+         />
+
+</RelativeLayout>

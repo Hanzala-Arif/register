@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".check">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            app:menu="@menu/items"
+            android:layout_gravity="start"
+            >
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_71sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:fontFamily="@font/arizonia"
+        android:text="    Ismail Arts"
+        android:textSize="@dimen/_48sdp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Order"
+            android:inputType="number" />
+
+
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:hint="Details"
+            android:inputType="textMultiLine" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+           >
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Delieverd" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:text="OK" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:onClick="check"
+            android:text="Check"
+            app:buttonColor="@color/teal_200"
+            app:cornerRadius="@dimen/_30sdp"
+            app:glowColor="@color/white"
+            app:pressedGlowSize="@dimen/_25sdp"
+            app:unpressedGlowSize="@dimen/_10sdp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/startss"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:onClick="deliever"
+            android:text="Delievered"
+            app:buttonColor="@color/teal_200"
+            app:cornerRadius="@dimen/_30sdp"
+            app:glowColor="@color/white"
+            app:pressedGlowSize="@dimen/_25sdp"
+            app:unpressedGlowSize="@dimen/_10sdp" />
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/starts2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+
+            android:onClick="OK"
+            android:text="OK"
+            app:buttonColor="@color/teal_200"
+            app:cornerRadius="@dimen/_30sdp"
+            app:glowColor="@color/white"
+            app:pressedGlowSize="@dimen/_25sdp"
+            app:unpressedGlowSize="@dimen/_10sdp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

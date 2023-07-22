@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyEntry">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_71sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="@dimen/_9sdp"
+        android:fontFamily="@font/arizonia"
+        android:text="    Ismail Arts"
+        android:textSize="@dimen/_48sdp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_280sdp"
+            android:prompt="@string/select" />
+
+        <EditText
+            android:id="@+id/rorder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:hint="Enter Order/Resource" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:hint="Details"
+            android:inputType="textMultiLine"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_230sdp"
+            android:hint="Date"
+            android:inputType="date"/>
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_330sdp"
+            android:onClick="book"
+            android:text="Enter"
+            app:buttonColor="@color/teal_200"
+            app:cornerRadius="@dimen/_50sdp"
+            app:glowColor="@color/white"
+            app:pressedGlowSize="@dimen/_25sdp"
+            app:unpressedGlowSize="@dimen/_10sdp" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/items"
+            android:layout_gravity="start"
+            >
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>
